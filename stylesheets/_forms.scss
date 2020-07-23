@@ -1,0 +1,44 @@
+// =counter()
+//   @for $i from 1 through 20
+//     &:nth-child(#{$i})
+//       &:before
+//         content: "#{$i - 1 + 1}"
+
+// .stepper
+//   h2
+//     //+counter
+//     &::before
+//       border: 3px solid $color--actions
+//       color: $color--actions
+//       border-radius: 32px
+//       display: inline-block
+//       padding: 4px 12px
+
+// .form-control, .custom-select
+//     border-width: $border--thick
+
+// label 
+//   font-weight: bolder
+//   margin-bottom: .125rem
+//   font-family: "Gotham Narrow Book"
+//   color: $color--gray
+//   +mq(md)
+//     font-size: .9rem
+//   span
+//     font-weight: lighter
+  
+// .card-header 
+//   background-color: $color--cityblue
+//   padding: 0
+//   button
+//     color: $color--white
+//     text-align: left
+//     padding: .75rem 2.75rem
+//     font-family: "GothamBook"
+//     &:hover
+//       color: $color--white
+//       text-decoration: none
+
+// .container
+//   &.form-max 
+//     max-width: 720px

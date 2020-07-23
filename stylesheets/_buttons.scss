@@ -1,0 +1,22 @@
+.btn {
+    font-family: $font--text-buttons; 
+    padding: .25rem 2rem;
+    min-width: 12rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    &.btn-lg {
+        padding: .75rem 3rem; 
+    }
+    &.btn-primary {
+        border: $color--gray-3 1px solid;
+        background: $color--cityblue;
+        color: $color--white;
+        &:hover {
+            background: $color--actions;
+        }
+        &:focus, &:active {
+            box-shadow: 0px 0px 4px $color-cyan;
+            border: none;
+        }
+    }
+}

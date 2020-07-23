@@ -1,0 +1,48 @@
+// MIXIN TO SET THE ICONS
+// Icons surce located in _variables.scss
+@mixin withIcon($icon: $icon-info) {
+    background-image: url($icon);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: .75rem .75rem;
+    padding-left: 3rem;
+} 
+// MIXIN TO SET THE COLORS
+@mixin alertColors($text: $color--info-dark, $border: $color--info, $background: $color--info-light) {
+    color: $text;
+    background-color: $background;
+    border-left: .25rem solid $border;
+    // border-color: $border;
+}
+// GENERAL STYLES FOR ALL ALERTS
+.alert {
+    font-size: .9rem;
+    border: none;
+    border-radius: 0px;
+    h6 {
+        margin: .25rem 0 .1rem 0;
+        font-weight: 500;
+        font-family: $font--text;
+    }
+    a {
+        font-weight: 500;
+        color: $color--actions;
+        text-decoration: underline;
+    }
+    // INFO
+    &.alert-info {
+        @include withIcon();
+        @include alertColors();
+    }
+    // SUCCESS
+    &.alert-success {
+        @include withIcon($icon-success);
+        @include alertColors($color--success-dark, $color--success, $color--success-light);
+    }
+    // ERROR
+    &.alert-error {
+        @include withIcon($icon-error);
+        @include alertColors($color--error-dark, $color--error, $color--error-light);
+    }
+}
+        

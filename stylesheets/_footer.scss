@@ -1,0 +1,41 @@
+footer {
+    background-color: $color--navi;
+    color: $color--gray-3;
+    font-size: .75em;
+    font-weight: 500;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        font-family: gotham book;
+        color: $color--white;
+        font-weight: 300;
+        &:hover {
+            color: $color--white;
+        }    
+    }
+    .bottom-footer {
+        border-top: 1px solid hsla(0,0%,91.4%,.2);
+        padding: .75rem;
+        font-family: gotham book;
+        ul {
+            li {
+                float: left;
+                &:last-child{
+                    &::after {
+                        content: "";
+                    }
+                }
+                &::after {
+                    content: "|";
+                    color: $color--white;
+                }
+                a {
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}

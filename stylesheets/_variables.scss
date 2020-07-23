@@ -1,0 +1,49 @@
+$global-unit: 1rem;
+//* Colors *//
+// Primary
+$color--cityblue: #0077C8;
+$color--actions: #00629B;
+$color--navi: #003050;
+$color-cyan: #00A9E0;
+$color-cyan-bright: #5BC2E7;
+// Neutrals
+$color--text: #2E2E2E;
+$color--gray-3: #B9B9B9;
+$color--white: #FFFFFF;
+$color--gray: #707070;
+$color--gray--light: #F1F1F1;
+// Alerts
+$color--info: $color--cityblue;
+$color--info-dark: $color--navi;
+$color--info-light: #C6DDEE;
+$color--success: #009E5F;
+$color--success-dark: #00381E;
+$color--success-light: #D3E9D5;
+$color--error: #B80600;
+$color--error-dark: #660300;
+$color--error-light: #EAC7C6;
+
+//* Borders *//
+$border--thin: 1px;
+$border--thick: 2px;
+
+// Shadows
+
+//* Typography *//
+// Base    
+$font--text: Gotham Narrow SSm A,Gotham Narrow SSm B,Helvetica,Arial,sans-serif;
+$font-weight: 40000;
+$font--base--default: 16px;
+$font--base--tablet: 18px;
+$font--base--desktop: 20px;
+$line--height: 1.25;
+// Medium
+$font--text-buttons: GothamBook, helvetica, arial, sans-serif;
+// Headings Typogarphy
+$font--headings: Gotham, helvetica, arial, sans-serif;
+
+
+//* Icons *//
+$icon-info: "../images/svg/icon_info.svg";
+$icon-success: "../images/svg/icon_valid.svg";
+$icon-error: "../images/svg/icon_error.svg";

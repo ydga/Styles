@@ -1,0 +1,28 @@
+// Defines the default base font
+@mixin fontBase() {
+  color: $color--text;
+  font-family: $font--text;
+}
+    
+// Shared styles fpr all headings loop
+@for $index from 1 through 6 {
+  h#{$index} {
+    font-family: $font--headings;
+    letter-spacing: -.025rem;
+    &:first-child {
+      margin-top: 0px;
+    }
+    & + p {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+// This takes all margins from paragraps,
+// but adds a bottom margin for those paragrapd followed by another parahraps.
+p {
+  margin: 0;
+  & + & {
+    margin: 1rem 0 0 0;
+  }
+}
+  

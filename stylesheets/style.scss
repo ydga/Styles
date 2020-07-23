@@ -1,0 +1,40 @@
+@import "variables.scss";
+@import "breakpoints";
+@import "type.scss";
+@import "breadcrumb.scss";
+@import "footer.scss";
+@import "alerts.scss";
+@import "buttons.scss";
+// @import "forms.scss";
+
+html {
+    font-size: $font--base--default;
+    @include mq(md) {
+        font-size: $font--base--tablet;
+    }
+    @include mq(lg) {
+        font-size: $font--base--desktop;
+    }
+}
+    
+body {
+    background: $color--gray--light;
+    @include fontBase;
+}
+    
+header {
+    background: $color--cityblue;
+    color: $color--white;
+    a {
+        color: $color--white;
+        text-decoration: none;
+    }
+}
+    
+main {
+    .container {
+        //max-width: 1200px;
+        //border: red solid 1px;
+    }
+    margin: calc(#{$global-unit} * 4) 0;
+}
